@@ -43,4 +43,16 @@ import Logo from '../assets/Logo.svg'
 li:hover{
     color: #006CFF;
 }
+@media (max-width: 990px){
+    .log {
+        border: 1.5px solid #006CFF;
+        color: #006CFF;
+        background: white;
+        padding: 10px 10px;
+        border-radius: 5px;
+      width: 40%;
+    }
+}
+
+
 </style>

@@ -25,7 +25,7 @@
 
 
     <section>
-        <div class="container info mt-5 ">
+        <div class="container info mt-5  ">
             <h3 class="fw-bold text-center mb-5">Our Clients</h3>
             <div class="row mb-5 justify-content-center">
                 <div class="col col-md-4">
@@ -49,7 +49,7 @@
     </section>
 
     <section>
-        <div class="container">
+        <div class="container mb-5">
            
 
             <div class="row flex-column flex-lg-row justify-content-center gap-5  align-items-center">
@@ -57,8 +57,8 @@
                     <img :src="Group" alt="">
                 </div>
 
-                <div class="col   col-sm-4">
-                    <h4 class="fw-bold">About US</h4>
+                <div class="col col-lg-4 text-center col-sm-12">
+                    <h4 class="fw-bold text-center">About US</h4>
                     <p>Scrybe is a conversation intelligence tool that automatically transcribes and analyzes recorded customer support conversations to extract 
                      sentimental analysis data. We help you determinethe efficiency of your customer support agents with the aim of improving overall customer satisfaction</p>
                      <button type="button" class=" sign ">read more</button>
@@ -304,8 +304,8 @@ span{
 }
 
 img{
-    height: 500px;
-    width: 100%;
+    height: 400px;
+    width: 90%;
 }
 .content{
     width: 100%;

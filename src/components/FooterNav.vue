@@ -3,7 +3,7 @@
     <footer class="text-white ">
         <div class="container foot d-flex justify-cintent-between gap-5  ">
             <div class="">
-                <a class="navbar-brand fw-bold fs-1" href="/"><img src="../assets/Group 45.svg" alt=""/>    Heed</a>
+                <a class="navbar-brand fw-bold fs-1" href="/"><img :src="Logo" alt=""/>    Heed</a>
                 <p>Providing businesses with intelligent, accurate, and precise intent
                     analysis to improve customer experience.</p>
             
@@ -52,8 +52,14 @@
 </template>
 
 <script>
+    import Logo from '../assets/Logo.svg'
     export default {
-        
+        data(){
+          return{
+            Logo:Logo
+          }
+     
+        }  
     }
 </script>
 

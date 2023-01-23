@@ -1,7 +1,7 @@
 <template>
 
      <nav class="navbar navbar-expand-lg container p-2">
-        <a class="navbar-brand fw-bold fs-1" href="/"><img src="../assets/Group 45.svg" alt=""/>    Heed</a>
+        <a class="navbar-brand fw-bold fs-1" href="/"><img :src="Logo" alt=""/>    Heed</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -19,7 +19,7 @@
             </ul>
             <div class="navbar-nav sm-icons mr-0">
                 <div class="d-flex gap-4 p-2 ">
-                    <a href=""><button type="button" class=" log  ">Login</button></a> 
+                    <router-link   class="btn log "  to="/login">login</router-link>
                      <a href=""><button type="button" class=" sign ">Try For Free</button> </a> 
                  </div>
             </div>
@@ -28,8 +28,14 @@
 </template>
 
 <script>
+import Logo from '../assets/Logo.svg'
     export default {
-        
+        data(){
+          return{
+            Logo:Logo
+          }
+     
+        }  
     }
 </script>
 

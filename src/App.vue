@@ -1,10 +1,16 @@
 <script >
 import { RouterLink, RouterView } from 'vue-router'
 import Navbar from './components/Navbar.vue';
+import Signup from './views/Signup.vue';
+import LoginVue from './views/Login.vue';
+import Dashboard from './views/Dashboard.vue';
 
 export default{
   components:{
-    Navbar
+    Navbar,
+    Signup,
+    LoginVue,
+    Dashboard
   }
 }
 </script>
@@ -36,6 +42,70 @@ export default{
   border-radius: 5px;
 
 }
+:root {
+  --primary-color: #0071fe;
+  --error-color: #f23648;
+  --error-bg-color: #fddfe2;
+  --success-color: #21a67a;
+  --success-bg-color: #e0eee4;
+}
+
+.submit-btn {
+  background: var(--primary-color);
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 15px;
+  display: block;
+  width: 100%;
+  border-radius: 7px;
+  margin-top: 15px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.submit-btn.invalid {
+  animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px);
+  }
+  10% {
+    transform: translate(-1px, -2px);
+  }
+  20% {
+    transform: translate(-3px, 0px);
+  }
+  30% {
+    transform: translate(3px, 2px);
+  }
+  40% {
+    transform: translate(1px, -1px);
+  }
+  50% {
+    transform: translate(-1px, 2px);
+  }
+  60% {
+    transform: translate(-3px, 1px);
+  }
+  70% {
+    transform: translate(3px, 1px);
+  }
+  80% {
+    transform: translate(-1px, -1px);
+  }
+  90% {
+    transform: translate(1px, 2px);
+  }
+  100% {
+    transform: translate(1px, -2px);
+  }
+}
+
 
 @media(max-width :990px){
  

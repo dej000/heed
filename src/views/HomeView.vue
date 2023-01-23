@@ -17,7 +17,7 @@
                </div>
             
                <div class="right">
-                <img src="../assets/Group 1000000899.svg" alt="">
+                <img :src="Hero" alt="">
                </div> 
         </div>
   
@@ -29,16 +29,16 @@
             <h3 class="fw-bold text-center mb-5">Our Clients</h3>
             <div class="row mb-5 justify-content-center">
                 <div class="col col-md-4">
-                    <img src="../assets/Frame 1000002205.svg" alt="">
+                    <img :src="HNG" alt="">
                 </div>
                 <div class="col  col-md-4">
-                    <img src="../assets/Rectangle 828219.svg" alt="">
+                    <img :src="Zuri" alt="">
                 </div>
                 <div class="col">
-                    <img src="../assets/image 14.svg" alt="">
+                    <img :src="Payoneer" alt="">
                 </div>
                 <div class="col">
-                    <img src="../assets/Facebook - png 1.svg" alt="">
+                    <img :src="Hotel" alt="">
                 </div>
                
            
@@ -54,7 +54,7 @@
 
             <div class="row flex-column flex-lg-row justify-content-center gap-5  align-items-center">
                 <div class="col col-sm-4">
-                    <img src="../assets/Group 30713.svg" alt="">
+                    <img :src="Group" alt="">
                 </div>
 
                 <div class="col   col-sm-4">
@@ -82,7 +82,7 @@
             <div class="row gap-4">
               <div class="col d-flex justify-content-center  ">
                 <div class="card text-center" style="width: 18rem; max-height:500px">
-                  <img src="../assets/bro.svg" class="card-img-top p-4" alt="...">
+                  <img :src="bro" class="card-img-top p-4" alt="...">
                   <div class="card-body">
                     <h5 class="card-title fw-bold">Upload Audio</h5>
                     <p class="card-text">Upload Audio between customers 
@@ -96,7 +96,7 @@
               
               <div class="col d-flex justify-content-center">
                 <div class="card text-center" style="width: 18rem; max-height:500px">
-                  <img src="../assets/pana.svg" class="card-img-top p-4" alt="...">
+                  <img :src="pana" class="card-img-top p-4" alt="...">
                   <div class="card-body">
                     <h5 class="card-title fw-bold">Transcribe Text</h5>
                     <p class="card-text">Our system transcribes these audio 
@@ -109,7 +109,7 @@
               
               <div class="col d-flex justify-content-center ">
                 <div class="card text-center" style="width: 18rem; max-height:500px">
-                  <img src="../assets/rafiki.svg" class="card-img-top p-4" alt="...">
+                  <img :src="rafiki" class="card-img-top p-4" alt="...">
                   <div class="card-body">
                     <h5 class="card-title fw-bold">Sentiment Analysis</h5>
                     <p class="card-text">The text is analyzed  using open Ai for 
@@ -139,7 +139,7 @@
                        
             <div class="row flex-column flex-lg-row justify-content-center gap-5  align-items-center mb-5">
                 <div class="col col-sm-4">
-                    <img src="../assets/Group 30713.svg" alt="">
+                    <img :src="Group" alt="">
                 </div>
 
                 <div class="col   col-sm-4">
@@ -154,7 +154,7 @@
                       <div class="carousel-item">
                         <div class="row flex-column flex-lg-row justify-content-center gap-5  align-items-center mb-5">
                             <div class="col col-sm-4">
-                                <img src="../assets/Group 30713.svg" alt="">
+                                <img :src="Group" alt="">
                             </div>
             
                             <div class="col   col-sm-4">
@@ -169,7 +169,7 @@
                       <div class="carousel-item">
                         <div class="row flex-column flex-lg-row justify-content-center gap-5  align-items-center mb-5">
                             <div class="col col-sm-4">
-                                <img src="../assets/Group 30713.svg" alt="">
+                                <img :src="Group" alt="">
                             </div>
             
                             <div class="col   col-sm-4">
@@ -268,10 +268,33 @@
 <script>
 import NavbarVue from '../components/Navbar.vue';
 import FooterNavVue from '../components/FooterNav.vue';
+import Hero from '../assets/Hero.svg'
+import HNG from '../assets/HNG.svg'
+import Zuri from '../assets/Zuri.svg'
+import Payoneer from '../assets/Payoneer.svg'
+import Hotel from '../assets/Hotel.svg'
+import bro from '../assets/bro.svg'
+import Group from '../assets/Group.svg'
+import pana from '../assets/pana.svg'
+import rafiki from '../assets/rafiki.svg'
     export default {
         components:{
   NavbarVue,FooterNavVue
-}
+},
+data(){
+          return{
+            Hero:Hero,
+            HNG:HNG,
+            Zuri:Zuri,
+            Payoneer:Payoneer,
+            Hotel:Hotel,
+            bro:bro,
+            Group:Group,
+            pana:pana,
+            rafiki:rafiki
+          }
+     
+        }
     }
 </script>
 
@@ -311,6 +334,10 @@ button.active {
 }
 input{
     background: #E6F0FF ;
+}
+
+.carousel-indicators button{
+  background-color: #006CFF;
 }
 @media(max-width :990px){
     h1{
@@ -352,6 +379,10 @@ input{
     width: 100%;
    height: 100%;
    
+}
+button span{
+  color: #006CFF;
+  display: none;
 }
   }
 </style>

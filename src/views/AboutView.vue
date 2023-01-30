@@ -129,17 +129,17 @@
                 <p class="text-secondary">FrontEnd Lead</p>
             </div>
             <div class="col  ">
-                <img src="Zuri" alt="">
+                <img src="" alt="">
                 <p>Aigbe Marvelous</p>
                 <p class="text-secondary">FrontEnd Lead</p>
             </div>
             <div class="col">
-                <img src="Payoneer" alt="">
+                <img src="" alt="">
                 <p>Collins Akpaka</p>
                 <p class="text-secondary">FrontEnd Lead</p>
             </div>
             <div class="col">
-                <img src="Hotel" alt="">
+                <img src="" alt="">
                 <p>Delphine Ogbonna</p><p class="text-secondary">FrontEnd Lead</p>
 
             </div>
@@ -153,17 +153,17 @@
                 <p class="text-secondary">FrontEnd Lead</p>
             </div>
             <div class="col  ">
-                <img src="Zuri" alt="">
+                <img src="" alt="">
                 <p>Aigbe Marvelous</p>
                 <p class="text-secondary">FrontEnd Lead</p>
             </div>
             <div class="col">
-                <img src="Payoneer" alt="">
+                <img src="" alt="">
                 <p>Collins Akpaka</p>
                 <p class="text-secondary">FrontEnd Lead</p>
             </div>
             <div class="col">
-                <img src="Hotel" alt="">
+                <img src="" alt="">
                 <p>Delphine Ogbonna</p>
                 <p class="text-secondary">FrontEnd Lead</p>
             </div>
@@ -182,7 +182,7 @@
 import NavbarVue from '../components/Navbar.vue';
 import FooterNavVue from '../components/FooterNav.vue';
 import pana2 from '../assets/pana2.svg'
-import Hero from '../assets/Hero.svg'
+
 import HNG from '../assets/HNG.svg'
 import Zuri from '../assets/Zuri.svg'
 import Payoneer from '../assets/Payoneer.svg'

@@ -7,13 +7,13 @@
           </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto p-2 gap-3">
-                <li class="nav-item">
-                    <router-link   class="text-black text-decoration-none"  to="/">Home</router-link>
+                <li class="nav-item p-2" >
+                    <router-link  class="text-black text-decoration-none "  to="/">Home</router-link>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item p-2">
                     <router-link   class="text-black text-decoration-none"  to="/pricing">Pricing</router-link>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item p-2">
                     <router-link   class="text-black text-decoration-none"  to="/about">About us</router-link>
                   </li>
             </ul>
@@ -35,13 +35,22 @@ import Logo from '../assets/Logo.svg'
             Logo:Logo
           }
      
-        }  
+        },
+        
     }
 </script>
 
 <style  scoped>
 li:hover{
-    color: #006CFF;
+   background-color: #006CFF;
+   color: white;
+}
+
+
+.active {
+  color: #ffffff !important;
+  background-color: #006CFF ;
+  border-color: var(--bs-nav-tabs-link-active-border-color);
 }
 @media (max-width: 990px){
     .log {
@@ -56,3 +65,4 @@ li:hover{
 
 
 </style>
+

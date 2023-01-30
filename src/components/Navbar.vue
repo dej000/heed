@@ -8,13 +8,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto p-2 gap-3">
                 <li class="nav-item">
-                    <a class="nav-link  text-black" href="#">Home</a>
+                    <router-link   class="text-black text-decoration-none"  to="/">Home</router-link>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-black" href="#">Pricing</a>
+                    <router-link   class="text-black text-decoration-none"  to="/pricing">Pricing</router-link>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-black" href="#">About Us</a>
+                    <router-link   class="text-black text-decoration-none"  to="/about">About us</router-link>
                   </li>
             </ul>
             <div class="navbar-nav sm-icons mr-0">

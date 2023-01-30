@@ -5,6 +5,7 @@ import Signup from './views/Signup.vue';
 import LoginVue from './views/Login.vue';
 import Dashboard from './views/Dashboard.vue';
 
+
 export default{
   components:{
     Navbar,

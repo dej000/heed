@@ -28,10 +28,10 @@
         <div class="container info mt-5  ">
             <h3 class="fw-bold text-center mb-5">Our Clients</h3>
             <div class="row mb-5 justify-content-center">
-                <div class="col col-md-4">
+                <div class="col ">
                     <img :src="HNG" alt="">
                 </div>
-                <div class="col  col-md-4">
+                <div class="col  ">
                     <img :src="Zuri" alt="">
                 </div>
                 <div class="col">
@@ -304,7 +304,7 @@ span{
 }
 
 img{
-    height: 400px;
+   
     width: 90%;
 }
 .content{
@@ -318,6 +318,7 @@ button.active {
 }
 .info img{
     height: 50px;
+
 }
 .card img{
     max-height: 220px ;
@@ -367,6 +368,7 @@ input{
    }
    img{
     height: 100%;
+    width: 100%;
    }
 
    .butt{

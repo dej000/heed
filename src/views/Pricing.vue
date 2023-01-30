@@ -154,10 +154,7 @@ a{
         margin-bottom: 0px;
         gap: 0px;
        }
-       img{
-        height: 10%;
-        width: 10%;
-       }
+     
     
        .butt{
         display: flex;

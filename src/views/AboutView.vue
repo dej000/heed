@@ -281,7 +281,7 @@ a{
     
       @media(max-width :770px){
         h1{
-          font-size: 20px;
+          font-size: 24px;
           text-align: center;
         }
         p{

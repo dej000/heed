@@ -11,7 +11,7 @@
                 </div>
                </div>
             
-               <div class="right">
+               <div class="right d-flex justify-content-center">
                 <img :src="raf" alt="">
                </div> 
         </div>
@@ -141,7 +141,7 @@ a{
     
       @media(max-width :770px){
         h1{
-          font-size: 20px;
+          font-size: 24px;
           text-align: center;
         }
         p{
@@ -154,7 +154,10 @@ a{
         margin-bottom: 0px;
         gap: 0px;
        }
-     
+       .hero img{
+        height: 90%;
+        width: 90%;
+       }
     
        .butt{
         display: flex;
